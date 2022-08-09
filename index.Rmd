@@ -1,15 +1,20 @@
 ---
 title: "Social Capital"
-date: "2022-08-02"
-output: html_document
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
 ```
-
-
 
 ```{r}
 ec <- read_rds("ec.rds")
@@ -51,7 +56,4 @@ ec |>
          x = "State Population",
          title = "Economic Connectedness and Population in US States",
          subtitle = "Biggger states have counties with lower average economic connectedness.")
-
-
 ```
-
